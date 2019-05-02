@@ -29,7 +29,7 @@ public class Main {
 
                 break;
             default:
-                System.out.println("Dude?! 'Y' or 'N'! It's not that hard! \n Press ENTER and try again!");
+                System.out.println("Dude?! 'Y' or 'N'! It's not that hard! \nPress ENTER and try again!");
 
                 break;
         }
