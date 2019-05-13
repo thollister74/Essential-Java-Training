@@ -12,11 +12,15 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
+      for (String car : getCarList())  {
+          System.out.println(car);
+      }
+
 //        String fName = "Sterling";
 //        String lName = "Archer";
 //        int userAge = 34;
 ////Array of car names
-        ArrayList<String> cars = new ArrayList<String>();
+        ArrayList<String> cars = new ArrayList<>();
         cars.add("Wrangler");
         cars.add("Porche");
         cars.add("Mustang");
@@ -28,6 +32,7 @@ public class Main {
         for (int c = 0; c < cars.size(); c++) {
             System.out.println(cars.get(c));
         }
+
 
         cars.add("Volvo");
         System.out.println("\nAfter adding to the array, there are " + cars.size() + " elements:");
@@ -138,5 +143,16 @@ while (doWhile < 6);
 //            System.out.println("Dude?! 'Y' or 'N'! It's not that hard!");
 //
 //        }
+    public static ArrayList<String> getCarList(){
+        ArrayList<String> cars = new ArrayList<>();
+        cars.add("Wrangler");
+        cars.add("Porche");
+        cars.add("Mustang");
+        cars.add("Volkswagon Bug");
+        cars.add("Tesla");
+        cars.get(0);
+        cars.set(3, "Lincoln");
+    return cars;
+     }
 }
 
